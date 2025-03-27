@@ -1,0 +1,109 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 122 39% 49%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 14 100% 57%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 28%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 122 39% 49%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 14 100% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-blog-dark text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer components {
+  .blog-card {
+    @apply overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .blog-card:hover .blog-card-image {
+    @apply scale-105;
+  }
+  
+  .blog-card-image {
+    @apply transition-transform duration-500 ease-in-out;
+  }
+  
+  .blog-headline {
+    @apply font-bold leading-tight hover:text-blog-green transition-colors duration-300;
+  }
+  
+  .section-title {
+    @apply text-xl md:text-2xl font-bold border-l-4 border-blog-green pl-3 mb-6;
+  }
+  
+  .read-more {
+    @apply text-sm text-blog-green hover:text-blog-accent transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .appear-animation > *:nth-child(1) { animation-delay: 0.1s; }
+  .appear-animation > *:nth-child(2) { animation-delay: 0.2s; }
+  .appear-animation > *:nth-child(3) { animation-delay: 0.3s; }
+  .appear-animation > *:nth-child(4) { animation-delay: 0.4s; }
+  .appear-animation > *:nth-child(5) { animation-delay: 0.5s; }
+  .appear-animation > *:nth-child(6) { animation-delay: 0.6s; }
+  .appear-animation > *:nth-child(7) { animation-delay: 0.7s; }
+  .appear-animation > *:nth-child(8) { animation-delay: 0.8s; }
+  .appear-animation > *:nth-child(9) { animation-delay: 0.9s; }
+  .appear-animation > *:nth-child(10) { animation-delay: 1s; }
+}
