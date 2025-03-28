@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 
 const tagManagerArgs = {
-  gtmId: "GTM-K55SGV96", 
+  gtmId: "GTM-DJXRBJWV", 
 };
 
 const GTMTracker = () => {
