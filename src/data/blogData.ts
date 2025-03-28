@@ -52,7 +52,8 @@ export const blogPosts: BlogPost[] = [
   "image": "https://drive.google.com/file/d/1Y694fAtQj8geF20YC3IfcyaJWoK-UdoG/view?usp=sharing",
   "readTime": "5 min read",
   "featured": true,
-  "createdAt": "2025-03-28"
+  "createdAt": "2025-03-28",
+    featuredSize: "large",
 },
   {
     id: 2,
