@@ -32,7 +32,7 @@ const CategoryPage = () => {
                   category={post.category}
                   title={post.title}
                   excerpt={post.excerpt}
-                  date={post.date}
+                  date={post.createdAt}
                   readTime={post.readTime}
                   slug={post.slug}
                 />

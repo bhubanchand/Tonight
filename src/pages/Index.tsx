@@ -82,7 +82,7 @@ const Index = () => {
                 category={post.category}
                 title={post.title}
                 excerpt={post.excerpt}
-                date={post.date}
+                date={post.createdAt}
                 readTime={post.readTime}
                 slug={post.slug}
               />
@@ -110,7 +110,7 @@ const Index = () => {
                   category={post.category}
                   title={post.title}
                   excerpt={post.excerpt}
-                  date={post.date}
+                  date={post.createdAt}
                   readTime={post.readTime}
                   slug={post.slug}
                   layout="horizontal"
@@ -139,7 +139,7 @@ const Index = () => {
                 category={post.category}
                 title={post.title}
                 excerpt={post.excerpt}
-                date={post.date}
+                date={post.createdAt}
                 readTime={post.readTime}
                 slug={post.slug}
               />
@@ -161,7 +161,7 @@ const Index = () => {
                 category={post.category}
                 title={post.title}
                 excerpt={post.excerpt}
-                date={post.date}
+                date={post.createdAt}
                 readTime={post.readTime}
                 slug={post.slug}
               />
@@ -188,7 +188,7 @@ const Index = () => {
                 category={post.category}
                 title={post.title}
                 excerpt={post.excerpt}
-                date={post.date}
+                date={post.createdAt}
                 readTime={post.readTime}
                 slug={post.slug}
                 layout="horizontal"
